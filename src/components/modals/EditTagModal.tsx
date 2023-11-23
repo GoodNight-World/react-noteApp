@@ -10,9 +10,11 @@ const EditTagModal = ({setOpenModal}: any) => {
 
     // 새로운 태그 추가 이벤트
     const createTag = (e: React.KeyboardEvent<HTMLInputElement>) => {
-        if(e.key === 'Enter'){
+        if(e.key === 'Enter' && e.currentTarget.value !== ""){
             console.log(e.currentTarget.value);
-            dispatch(pushTag(e.currentTarget.value));
+            const val = e.currentTarget.value;
+            e.currentTarget.value = "";
+            dispatch(pushTag(val));
         }
     }
     
@@ -24,7 +26,7 @@ const EditTagModal = ({setOpenModal}: any) => {
   return (
     <div className='editTag__background'>
         <div className='editTag__container'>
-            <input type='text' onKeyUp={createTag} placeholder='태그 생성(이름 넣고 Enter)' />
+            <input type='text' onKeyPress={createTag} placeholder='태그 생성(이름 넣고 Enter)' />
             <button onClick={() => exitAddTag()}>x</button>
             { allTags.map((tag, index) => (
                 <div key={index} className='editTag__row'>
