@@ -1,0 +1,33 @@
+.page-container {
+    flex-grow: 7;
+    height: 100%;
+}
+
+h2 {
+    text-align: center;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 20px;
+}
+
+.page-name {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 10px 20px;
+}
+
+
+.modal-btn {
+    width: 50px;
+    height: 40px;
+    margin: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    background-color: bisque;
+}

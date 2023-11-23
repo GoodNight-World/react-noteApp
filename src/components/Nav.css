@@ -1,0 +1,19 @@
+.side-nav {
+    flex-grow: 1;
+    background-color: rgb(251, 203, 184);
+    height: 100%;
+}
+
+.menu-item {
+    padding: 23px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    background-color: rgb(252, 211, 194);
+}
+
+.current {
+    background-color: rgb(252, 211, 194);
+}

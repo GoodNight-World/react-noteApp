@@ -1,0 +1,44 @@
+.addTag__background{
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.addTag__container {
+    z-index: 1000;
+    position: relative;
+    left: 38%;
+    top: 40%;
+    max-width: 250px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.addTag__container>input {
+    margin: 10px;
+    width: 160px;
+}
+.addTag__container>button {
+    float: right;
+    margin: 10px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    border-radius: 5px;
+}
+
+.addTag__row {
+    margin: 10px;
+}
+
+.addTag__row>button {
+    background-color: white;
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+}

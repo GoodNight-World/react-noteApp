@@ -1,9 +1,11 @@
 import { configureStore, ThunkAction, Action } from '@reduxjs/toolkit';
-import counterReducer from '../features/counter/counterSlice';
+import pageStateReducer from '../reducers/pageState/pageStateSlice'
+import NotesReducer from '../reducers/notes/noteSlice';
 
 export const store = configureStore({
   reducer: {
-    counter: counterReducer,
+    pageState: pageStateReducer,
+    notes: NotesReducer,
   },
 });
 

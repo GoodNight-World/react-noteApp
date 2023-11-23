@@ -1,0 +1,68 @@
+.modal__background{
+    position: fixed;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+}
+
+.modal {
+    z-index: 1000;
+    position: relative;
+    left: 20%;
+    top: 25%;
+    max-width: 800px;
+    box-shadow: 0px 3px 5px -1px rgba(0, 0, 0, 0.2),
+        0px 5px 8px 0px rgba(0, 0, 0, 0.14), 0px 1px 14px 0px rgba(0, 0, 0, 0.12);
+    overflow: hidden;
+    border: 1px solid whitesmoke;
+    border-radius: 8px;
+    background-color: white;
+    
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header p {
+    margin: 10px 20px;
+    font-size: 18px;
+}
+
+.modal-header button {
+    margin: 10px 20px;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(220, 220, 220);
+    border: none;
+    border-radius: 5px;
+}
+
+.modal-content {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.modal-content input {
+    height: 30px;
+    margin: 15px 25px;
+}
+.modal-content textarea {
+    margin: 0 25px;
+}
+
+.modal-bottom {
+    display: flex;
+    justify-content: space-around;
+    margin: 15px 0;
+}
+.tag-box{
+    display: flex;
+}
+.tag{
+    margin: 15px 0;
+    margin-left: 25px;
+    border: none;
+    border-radius: 3px;
+    height: 25px;
+}
